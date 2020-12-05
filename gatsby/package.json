@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "sando-bujutsu.de",
+  "name": "we-are-legion.xyz",
   "version": "1.0.0",
   "dependencies": {
     "bulma": "^0.8.0",
@@ -15,9 +15,6 @@
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0"
-  },
-  "devDependencies": {
-    "@now/node": "^1.3.0"
   },
   "scripts": {
     "dev": "gatsby develop",
