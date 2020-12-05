@@ -5,7 +5,7 @@ import BackgroundImage from 'gatsby-background-image';
 export const StartBlock = () => {
   const query = useStaticQuery(graphql`
     {
-      file(relativePath: { eq: "wearelegion_lander.png" }) {
+      file(relativePath: { eq: "wearelegion_lander.jpg" }) {
         childImageSharp {
           fluid(
             maxWidth: 1920

@@ -35,7 +35,7 @@ module.exports = {
         name: 'We Are Legion',
         short_name: 'WeAreLegion',
         start_url: '/',
-        icon: 'static/wal-logo.png',
+        icon: 'static/wal-logo.jpg',
       },
     },    
     `gatsby-plugin-sharp`,     
