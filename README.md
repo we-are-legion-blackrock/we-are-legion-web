@@ -1,1 +1,1 @@
-# we-are-legion-web
+# We Are Legion
