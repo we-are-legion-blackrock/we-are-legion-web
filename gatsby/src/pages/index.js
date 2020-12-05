@@ -1,6 +1,5 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { ClientsBlock } from '../components/ClientsBlock';
 import { ContactsBlock } from '../components/ContactsBlock';
 import { InfoBlock } from '../components/InfoBlock';
 import { HoursBlock } from '../components/HoursBlock';
