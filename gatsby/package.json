@@ -1,23 +1,26 @@
 {
   "private": true,
-  "name": "sando-bujutsu.de",
+  "name": "we-are-legion.xyz",
   "version": "1.0.0",
   "dependencies": {
     "bulma": "^0.8.0",
     "classnames": "^2.2.6",
     "gatsby": "^2.18.14",
-    "gatsby-image": "^2.0.15",
+    "gatsby-background-image": "^1.3.1",
+    "gatsby-image": "^2.7.0",
     "gatsby-plugin-html-attributes": "^1.0.5",
     "gatsby-plugin-manifest": "^2.0.5",
     "gatsby-plugin-react-helmet": "^3.0.0",
     "gatsby-plugin-sass": "^2.1.27",
+    "gatsby-plugin-sharp": "^2.10.0",
+    "gatsby-source-filesystem": "^2.7.0",
+    "gatsby-transformer-sharp": "^2.8.0",
     "node-sass": "^4.13.0",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
-    "react-helmet": "^5.2.0"
-  },
-  "devDependencies": {
-    "@now/node": "^1.3.0"
+    "react-helmet": "^5.2.0",
+    "styled": "^1.0.0",
+    "styled-components": "^5.2.1"
   },
   "scripts": {
     "dev": "gatsby develop",
