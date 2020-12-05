@@ -1,50 +1,47 @@
 import React from 'react'
-import { graphql, StaticQuery } from 'gatsby'
-import BackgroundImage from 'gatsby-background-image'
-import { withMenuComponentBlock } from './withMenuComponentBlock';
+import { useStaticQuery ,graphql } from 'gatsby'
+import BackgroundImage from 'gatsby-background-image';
 
-
-
-export const StartBlock = withMenuComponentBlock({
-  id: 'about',
-  Component: ({ className }) => (
-    <StaticQuery
-      query={graphql`
-        query {
-          desktop: file(relativePath: { eq: "wow-background.png" }) {
-            childImageSharp {
-              fluid(quality: 90, maxWidth: 1920) {
-                ...GatsbyImageSharpFluid_withWebp
-              }
-            }
+export const StartBlock = () => {
+  const query = useStaticQuery(graphql`
+    {
+      file(relativePath: { eq: "wearelegion_lander.png" }) {
+        childImageSharp {
+          fluid(
+            maxWidth: 1920
+            quality: 90
+            traceSVG: { color: "#4b4e57" }
+          ) {
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
           }
         }
-      `}
-      render={data => {
-        // Set ImageData.
-        const imageData = data.desktop.childImageSharp.fluid
-        return (
-          <BackgroundImage
-            Tag="section"
-            className={className}
-            fluid={imageData}
-            backgroundColor={`#040e18`}
-          >
-            <div className='columns'>
-              <div className='column is-3  is-size-2-desktop is-size-4-touch'>
-                <div className='brand-name has-text-left brand-name-900'>We Are Legion</div>
-                <div className='brand-name has-text-centered brand-name-600'>Blackrock</div>
-              </div>
-            </div>
-            <div className='columns'>
-              <div className='column is-3 is-size-2-desktop is-size-4-touch'>
-                <div className='brand-name has-text-left  brand-name-900'>Gestalte</div>
-                <div className='brand-name has-text-left brand-name-600'> unsere progressorienterte und geile Gemeinschaft mit</div>
-              </div>
-            </div>
-          </BackgroundImage>
-        )
-      }}
-    />
+      }
+    }
+  `)
+  const imageData = query.file.childImageSharp.fluid
+  console.log(imageData)
+  return (
+    <div className='about'>
+      <BackgroundImage
+        Tag="section"
+        className='about'
+        fluid={imageData}
+        backgroundColor={`#040e18`}
+      >
+        <div className='columns'>
+          <div className='column is-3  is-size-2-desktop is-size-4-touch'>
+            <div className='brand-name has-text-left brand-name-900'>We Are Legion</div>
+            <div className='brand-name has-text-centered brand-name-600'>Blackrock</div>
+          </div>
+        </div>
+        <div className='columns'>
+          <div className='column is-3 is-size-2-desktop is-size-4-touch'>
+            <div className='brand-name has-text-left  brand-name-900'>Gestalte</div>
+            <div className='brand-name has-text-left brand-name-600'> unsere progressorienterte und geile Gemeinschaft mit</div>
+          </div>
+        </div>
+      </BackgroundImage>
+    </div>
   )
-})
+}
+

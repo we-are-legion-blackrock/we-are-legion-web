@@ -77,10 +77,13 @@ body {
   height: 100%;
 }
 
-#about {
-  @include background('../images/wearelegion-lander-background.png');
+.about {
   color: $mine_shaft;
   font-weight: 300;
+  height: 100vh;
+  background-position: center center fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   .columns {
     position: absolute;
@@ -141,7 +144,7 @@ a.navbar-item:hover {
   color: $white;
   &:hover {
     @include brand-underline;
-    background-image: url(../images/brand-black-highlight.svg);
+    background-image: url(/brand-black-highlight.svg);
   }
 }
 
@@ -235,7 +238,7 @@ a.navbar-item:hover {
 // desktop
 @media screen and (min-width: 1024px) {
   #clients {
-    // @include background('../images/wow-background.png');
+    // @include background('images/wow-background.png');
     // background-size: contain;
   }
 
@@ -329,7 +332,7 @@ a.navbar-item:hover {
 // brand higlights made by https://vectr.com/
 .brand-turbo-underline {
   @include brand-underline;
-  background-image: url(../images/brand-silver-highlight.svg);
+  background-image: url(/brand-silver-highlight.svg);
   &-white{
     color:$white
   }
@@ -338,21 +341,21 @@ a.navbar-item:hover {
 .brand-red-underline{
   // brand higlights made by https://vectr.com/
   @include brand-underline;
-  background-image: url(../images/brand-red-highlight.svg);
+  background-image: url(/brand-red-highlight.svg);
   &-white{
     @include brand-underline;
-    background-image: url(../images/brand-red-highlight.svg);
+    background-image: url(/brand-red-highlight.svg);
     color:$white
   }
 }
 
 .brand-silver-underline {
   @include brand-underline;
-  background-image: url(../images/brand-silver-highlight.svg);
+  background-image: url(/brand-silver-highlight.svg);
   
 }
 .brand-black-underline {
   @include brand-underline;
-  background-image: url(../images/brand-black-highlight.svg);
+  background-image: url(/brand-black-highlight.svg);
   
 }
