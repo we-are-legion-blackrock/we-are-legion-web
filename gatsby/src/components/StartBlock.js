@@ -19,7 +19,6 @@ export const StartBlock = () => {
     }
   `)
   const imageData = query.file.childImageSharp.fluid
-  console.log(imageData)
   return (
     <div className='about'>
       <BackgroundImage

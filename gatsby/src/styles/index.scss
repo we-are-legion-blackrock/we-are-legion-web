@@ -6,6 +6,9 @@ $link: #fdfdfd;
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900|Russo+One&display=swap');
 
+
+
+
 @mixin brand-underline {
   text-decoration: none;
   background-repeat: repeat-x;
@@ -88,12 +91,12 @@ body {
   .columns {
     position: absolute;
     width: 100%;
-    left: 300px;
-    &:nth-child(3) {
-      top: 400px;
-    }
+    left: 30vh;
     &:nth-child(2) {
-      top: 200px;
+      top: 20vh;
+    }
+    &:nth-child(3) {
+      top: 40vh;
     }
   }
   
@@ -144,7 +147,7 @@ a.navbar-item:hover {
   color: $white;
   &:hover {
     @include brand-underline;
-    background-image: url(/brand-black-highlight.svg);
+    background-image: url(brand-black-highlight.svg);
   }
 }
 
@@ -237,10 +240,7 @@ a.navbar-item:hover {
 
 // desktop
 @media screen and (min-width: 1024px) {
-  #clients {
-   
-  }
-
+  
   .column-title {
     margin-bottom: 2rem;
   }
@@ -259,6 +259,27 @@ a.navbar-item:hover {
 
 // touch
 @media screen and (max-width: 1023px) {
+  .about {
+    color: $mine_shaft;
+    font-weight: 300;
+    height: 100vh;
+    background-position: center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    .columns {
+      position: absolute;
+      width: 100%;
+      left: 10vh;
+      &:nth-child(2) {
+        top: 10vh;
+      }
+      &:nth-child(3) {
+        top: 30vh;
+      }
+    }
+    
+  }
   .column-title {
     margin-bottom: 1rem;
   }
@@ -277,6 +298,7 @@ a.navbar-item:hover {
 
 // tablet and desktop
 @media screen and (min-width: 600px) {
+  
   .number-background {
     font-size: 12rem;
   }
@@ -300,6 +322,27 @@ a.navbar-item:hover {
 
 // mobile
 @media screen and (max-width: 601px) {
+  .about {
+    color: $mine_shaft;
+    font-weight: 300;
+    height: 100vh;
+    background-position: center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    .columns {
+      position: absolute;
+      width: 100%;
+      left: 10vh;
+      &:nth-child(2) {
+        top: 10vh;
+      }
+      &:nth-child(3) {
+        top: 30vh;
+      }
+    }
+    
+  }
   .number-background {
     font-size: 6rem;
   }
@@ -323,6 +366,27 @@ a.navbar-item:hover {
 
 // small mobile
 @media screen and (max-width: 390px) {
+  .about {
+    color: $mine_shaft;
+    font-weight: 300;
+    height: 100vh;
+    background-position: center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    .columns {
+      position: absolute;
+      width: 100%;
+      left: 10vh;
+      &:nth-child(2) {
+        top: 10vh;
+      }
+      &:nth-child(3) {
+        top: 40vh;
+      }
+    }
+    
+  }
   .is-size-7-small-mobile {
     font-size: 0.75rem !important;
   }
@@ -331,30 +395,19 @@ a.navbar-item:hover {
 // brand higlights made by https://vectr.com/
 .brand-turbo-underline {
   @include brand-underline;
-  background-image: url(/brand-silver-highlight.svg);
+  background-image: url(brand-silver-highlight.svg);
   &-white{
-    color:$white
-  }
-}
-
-.brand-red-underline{
-  // brand higlights made by https://vectr.com/
-  @include brand-underline;
-  background-image: url(/brand-red-highlight.svg);
-  &-white{
-    @include brand-underline;
-    background-image: url(/brand-red-highlight.svg);
     color:$white
   }
 }
 
 .brand-silver-underline {
   @include brand-underline;
-  background-image: url(/brand-silver-highlight.svg);
+  background-image: url(brand-silver-highlight.svg);
   
 }
 .brand-black-underline {
   @include brand-underline;
-  background-image: url(/brand-black-highlight.svg);
+  background-image: url(brand-black-highlight.svg);
   
 }
