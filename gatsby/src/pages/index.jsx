@@ -8,7 +8,7 @@ import { StartBlock } from '../components/StartBlock';
 
 import '../styles/index.scss';
 
-const Index = () =>  {
+const Index = () => {
   return (
     <main>
       <Helmet>
@@ -21,6 +21,6 @@ const Index = () =>  {
       <ContactsBlock />
     </main>
   );
-}
+};
 
 export default Index;
